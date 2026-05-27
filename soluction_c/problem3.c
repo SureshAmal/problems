@@ -11,7 +11,6 @@
 
 // NOTE: this header file need stdio.h for printf so load it after including the
 // stdio
-//
 // basic knowledge for directory the '.' point to the current directory and '..'
 // point to the parent directory
 // in window if u do `dir` u see them and in linux `ls -la`
@@ -40,14 +39,13 @@ int main(void) {
   // max factors of any number is value of number/2 + 1
   int rec_factorials[(num / 2) + 1];
 
-  int ite_length = sizeof(ite_factorials) / sizeof(ite_factorials[0]);
-  int rec_length = sizeof(rec_factorials) / sizeof(rec_factorials[0]);
   int index = 0;
+  int length = (num / 2) + 1;
 
-  set_array(ite_length, ite_factorials, -1);
-  fin_ite_factos(num, ite_length, ite_factorials);
+  set_array(length, ite_factorials, -1);
+  fin_ite_factos(num, length, ite_factorials);
   // print_array(ite_length, ite_factorials);
-  set_array(rec_length, rec_factorials, -1);
+  set_array(length, rec_factorials, -1);
   fin_rec_factos(num, 0, rec_factorials, index);
   // print_array(rec_length, rec_factorials);
 
