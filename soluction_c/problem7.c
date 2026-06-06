@@ -3,7 +3,6 @@
 // (iterative and recursive).
 // DEFIICULTY:6
 
-#include <stddef.h>
 #define IMPLIMENTAION_ARRAY_UTILS
 #include <stdio.h>
 
